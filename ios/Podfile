@@ -21,9 +21,8 @@ target 'ReactNativeCliBoilerplate' do
     :path => config[:reactNativePath],
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/..",
-    # Disable the new architecture for compatibility
-    :fabric_enabled => false,
-    :new_arch_enabled => false
+    :fabric_enabled => true,
+    :new_arch_enabled => true
   )
 
   post_install do |installer|
